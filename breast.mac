@@ -1,0 +1,13 @@
+/score/create/boxMesh mesh
+/score/mesh/boxSize 15 15 1 cm
+/score/mesh/nBin 1000 1000 1
+/score/mesh/translate/xyz 0 0 3.1 cm
+/score/quantity/nOfTrack fF 1
+#/score/filter/particle gammafilter gamma
+/score/close
+/vis/scene/endOfEventAction accumulate 7000000
+/gun/particle gamma
+/gun/energy 30 keV
+/run/beamOn 7000000
+/score/drawProjection mesh fF
+/score/dumpQuantityToFile mesh fF cone_beam_valitator.txt
